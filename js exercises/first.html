@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js practice</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+    </style>
+    
+</head>
+<body>
+  <div>
+    <form action="#" method="post">
+        <label for="username">username</label>
+        <input type="text" id="username" onblur="checkUsername()"> 
+        <div id="feedback"></div>
+        <label for="password"> Create a password</label>
+        <input type="text" name="password">
+        <input type="submit" value="sign up!">
+    </form>
+  </div>
+  <div>
+    <label for="weather">select the weather type today:</label>
+    <select  id="weather">
+      <option value="">--Make a choice--</option>
+      <option value="rainy">rainy</option>
+      <option value="sunny">sunny</option>
+      <option value="snowing">snowing</option>
+      <option value="overcast">overcast</option>
+    </select>
+   <h5></h5>
+  </div>
+  <button onclick="exa()"> Click me </button>
+
+
+
+  <script>
+const select = document.querySelector('select');
+const para = document.querySelector('h5');
+
+select.addEventListener('change', setWeather);
+
+function setWeather(){
+  const choice = select.value;
+
+  if (choice === 'sunny'){
+    para.textContent = 'It is nice and sunny outside today. ';
+  }else if(choice === 'rainy'){
+    para.textContent = 'it is raning today.';
+  }else if(choice === 'snowing'){
+    para.textContent = 'It is snowing today!';
+  }else if (choice === 'overcast'){
+    para.textContent = 'The sky is grey and gloomy today!';
+  }else{
+    para.textContent = '';
+  }
+}
+
+let dhalasho = true;
+let waqti = (dhalasho) ? 'Happy birthday!' : 'good morning!';
+
+
+let sacad = new Date();
+let daqiiqo = sacad.getHours;
+ 
+if (daqiiqo < 8 || daqiiqo > 18){
+  alert("The office is closed. ");
+}else{
+  alert("The office is open.");
+}
+
+
+let userName= prompt("Who is there?" + " ");
+if (userName === "Admin"){
+  let pass = prompt("password?" + " ");
+  if (pass === "The Master"){
+    alert("Welcome! ");
+  }else if (pass===" " || pass === null){
+    alert ("Cancelled ");
+  }else{
+    alert ("Wrong password ");
+  }
+
+}else if (userName === " "|| userName === null){
+  alert (" Cancelled");
+}else{
+  alert ("I don't know you ");
+}
+
+
+let mySong = `Fight the Youth`;
+let myScore = 9;
+let highestScore = 10;
+let output = 'I like the song ' + mySong + '. I gave it a score of ' + (myScore/highestScore *100) + '%.';
+console.log(mySong)
+console.log(output)
+
+let myFirstString = '123';
+let myNum = Number(myFirstString);
+console.log(typeof myNum)
+
+let myNum2 = 123;
+let myString2 = myNum2.toString();
+console.log( typeof myString2)
+
+"fardosa "  + 25;
+    
+const button = document.querySelector('button');
+
+function exa(){
+   let name = prompt("what is your name?")
+   alert ('Hello ' + name + ', nice to meet you!');
+}
+
+
+
+let sabrin = "a very beautiful girl.";
+let goodString = sabrin;
+console.log(goodString)
+let sgl = 'single quote example.';
+console.log(sgl)
+
+    var firstName = "Fardosa";
+    console.log("my name is " + " " + firstName) 
+
+const max = 57;
+const actual = max - 13;
+const percentage = actual /max;
+console.log(percentage)
+
+let f = 10;
+console.log(f)
+console.log(9 * f)
+
+let g = 7 * f;
+console.log(g)
+
+
+      function checkUsername(){
+        var username = document.getElementById("username");
+        var mesg = document.getElementById("feedback");
+        if (username.value.length<5) {
+          mesg.textContent = "Username must be five characters or more";
+        }else{
+         mesg.textContent = "";
+    }
+}
+checkUsername
+
+//hello world in js
+console.log("Hello world!")
+
+let a = 3, b = 3;
+let c = ++a;
+let d = b++;
+
+console.log(23 + 97)
+
+console.log(2 + 4 + 5 + 4 + 6 + 9 )
+
+a = (4 + 6 + 9)
+console.log(a / 77)
+
+
+
+</script>
+</body>
+</html>

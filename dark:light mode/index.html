@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light and dark mode</title>
+</head>
+<body>
+    <label for="theme">Select theme: </label>
+    <select  id="theme">
+        <option value="white">White</option>
+        <option value="black">Black</option>
+    </select>
+
+    <h1>This is the best dark and light mode tutorial</h1>
+    <p id = 'day'></p>
+</body>
+<script>
+
+const select = document.querySelector('select');
+const html = document.querySelector('html');
+document.body.style.padding = '10px';
+
+function update(bgColor, textColor) {
+    html.style.backgroundColor = bgColor;
+    html.style.color = textColor;
+}
+
+select.onchange = function() {
+    (select.value === 'black' ) ? update('black', 'white' ) : update( 'white', 'black');
+}
+
+
+let day = new Date().getDay();
+switch (day){
+    case 0:
+        console.log('It is Sunday, time to relax!');
+        break;
+    case 1:
+        console.log('Happy Monday!') ;
+        break;
+    case 2:
+        console.log('Tuesday');
+        break;
+    case 3:
+        console.log('wed') ;
+        break;
+    case 4:
+        console.log('thursday');
+        break;
+    case 5:
+        console.log('Friday');
+        break;
+    case 6:
+        console.log('Saturday');
+        break;
+    default:
+        console.log('Something went terribly wrong!') ;
+        break;                         
+}
+
+
+</script>
+</html>

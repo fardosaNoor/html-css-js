@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image:linear-gradient(rgba(192,192,192,0.7), rgba(192,192,192,0.7)), url(sawir/chef1.jpg);
+    
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+   justify-content: space-between;
+   align-items: center;
+}
+nav img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+}
+   
+.nav-links ul li a{
+     text-decoration: none;
+     color: rgb(63, 9, 9);
+     transition: 0.5s;
+}
+.nav-links ul li a:hover{
+    color: black;
+    background-color: white;
+}
+.text-box{
+    width:90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align : center;
+    color:rgb(63, 9, 9);
+}
+.text-box h1{
+    font-size: 62px;
+   
+}
+.text-box p{
+    font-size: 14px;
+    margin: 10px 0 40px;
+}
+.text-box a{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    font-size: 13px;
+    padding:12px 34px;
+    position: relative;
+    background: transparent;
+    color: rgb(63, 9, 9);
+    transition: 0.5s;
+}
+.text-box a:hover{
+    border: 1px solid rgb(63, 9, 9);
+    color: white;
+}
+.chefs{
+   width: 80%; 
+   padding-top: 100px;
+  
+   text-align: center;
+   margin: auto;
+   
+}
+h1{
+    font-size: 36px;
+    color: rgb(63, 9, 9);
+    font-weight: 600;
+}
+p{
+    font-size: 14px;
+    color: rgb(63, 9, 9);
+    font-weight: 300;
+    line-height: 22px;
+   padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    background: rgb(253, 250, 239);
+    padding: 20px 12px;
+    margin-bottom: 5%;
+    transition: 0.5s;
+
+}
+.course-col img{
+    width: 300px;
+    height: auto;
+}
+.course-col:hover{
+    box-shadow:0 0 20px;
+    
+}
+.testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.testi{
+    display: flex;
+   margin-top: 5%;
+   justify-content: space-between;
+  
+  
+}
+.testis{
+    flex-basis: 31%;
+    padding: 20px 12px;
+    border-radius: 0px;
+    margin-bottom: 5%;
+    background: lightgoldenrodyellow;
+    transition: 0.5s;
+
+}
+.testis img{
+    width: 150px;
+    border-radius: 50%;
+}
+.testis:hover{
+    box-shadow: 0 0 20px  orangered;
+}
+
+
+
+

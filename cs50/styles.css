@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(grad.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.others{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(40, 19, 75, 0.3),rgba(40, 19, 74, 0.31));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+
+.span{
+    color:black;
+}
+
+ .logo{
+    font-size: 30px;
+    margin-right: 100px;
+    color: #fff;
+ }
+
+ .nav-links{
+    flex: 1;
+    text-align: right;
+ }
+ .nav-links ul{ 
+    list-style: none;
+    position: relative;
+    display: inline-block;
+   
+ }
+ .nav-links ul li {
+    display: inline;
+    
+ }
+ .nav-links ul li a{
+    text-decoration: none;
+    padding: 8px 12px;
+    color: #fff;
+ }
+
+ .nav-links ul li a:hover{
+color: gray;
+ }
+
+ .info{
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+ }
+ .info h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    line-height: 1.5;
+ }
+ .info p{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 15px;
+ }
+  button{
+    margin-left: 35%;
+    font-size: 22px;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 20px;
+ }
+ button a{
+    color: #fff;
+    text-decoration: none;
+ }
+ button a:hover{
+    color: rgb(172, 136, 136);
+ }
+
+ footer{
+    font-size: 22px;
+    width: 5px;
+    position: relative;
+    display: inline;
+    margin-left: 30% ;
+    align-items: center;
+    justify-content: center;
+ }
+ .course-sec{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+ }
+ .courses{
+    width: 400px;
+ }
+ form{
+   width: 650px;
+    margin-top: 10%;
+    margin-left: 20%;
+    min-height: 600px;
+ }
+ form label {
+    display: block;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #fff;
+ }
+ form input{
+    display: block;
+    font-size: 28px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid aliceblue;
+
+ }
+ form button{
+    display: block;
+    color: #fff;
+ }
+ form button:hover{
+    color: grey;
+ }

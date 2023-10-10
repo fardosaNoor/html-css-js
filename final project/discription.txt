@@ -1,0 +1,9 @@
+_Create a website app used for idea generation
+_I will need a home page, share your idea page, discusssion page, unicorn idea page, communities page, register, login and logout
+home page: "Discuss and share your amazing ideas with the world and get an honest feedback from people who care"
+            a button "start sharing"
+share your idea page: drop_down to select from the category the idea belongs to 
+                        idea discription area 
+discussion will add likes, comments upvotes
+if an idea gets more than 20 likes transfer it unicorn idea page
+create communities

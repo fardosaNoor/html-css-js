@@ -1,0 +1,97 @@
+/*animated effect*/
+.button{
+    font-size: 28px;
+    width: 200px;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    border:none;
+    background-color: red;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-bottom: 30px;
+
+}
+.button span{
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+.button span::after{
+    content: '\00bb';
+    position: absolute;
+    top: 0;
+    right: -20px;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+.button:hover span::after{
+    right: 0px;
+    opacity: 1;
+}
+button:hover span{
+    padding-right: 25px;
+}
+/*pressed effect*/
+.pressed{
+    display: inline-block;
+    font-size: 30px;
+    width: 200px;
+    padding: 15px 25px;
+    background-color: rgb(90, 184, 131);
+    color: silver;
+    border: none;
+    box-shadow: 0 10px #ccc;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    transition: 0.5s;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.pressed:hover{
+    background-color: seagreen;
+}
+.pressed:active{
+    background-color: seagreen;
+    box-shadow: 0 5px #000;
+    transform:translateY(4px);
+}
+.ripple{
+    font-size: 28px;
+    width: 200px;
+    padding: 20px;
+    background-color:  rgb(90, 184, 131);
+    border-radius: 10px;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition-duration: 0.4s;
+    color: #fff;
+   
+}
+.ripple::after{
+    content: " ";
+    background:#f1f1f1 ;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-top:-120%  ;
+    margin-left: -20% !important;
+    opacity: 0;
+    transition: all 0.8s;
+    display: block;
+
+}
+.ripple:active::after{
+    opacity:1;
+    margin:0;
+    padding:0;
+    transition:0s;
+}

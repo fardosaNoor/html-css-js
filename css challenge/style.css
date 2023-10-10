@@ -1,0 +1,79 @@
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkgreen;
+}
+.circle{
+    width: 200px;
+    height:200px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+
+}
+.dot1{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: yellowgreen;
+    top: 55px;
+    left:30px
+}
+.dot2{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: yellowgreen;
+    top: 30px;
+    left:120px
+}
+.dot3{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: yellowgreen;
+    top: 130px;
+    left:80px
+}
+.line1{
+    position: absolute;
+    width: 10px;
+    height:320px;
+    background: yellow;
+    border-radius: 5px;
+    left:100px;
+    top: -80px;
+   
+}
+.line2{
+    position: absolute;
+    width: 10px;
+    height:320px;
+    background: yellow;
+    border-radius: 5px;
+    left:100px;
+    top: -80px;
+    transform: rotate(55deg);
+   
+}
+.line3{
+    position: absolute;
+    width: 10px;
+    height:320px;
+    background: yellow;
+    border-radius: 5px;
+    left:100px;
+    top: -80px;
+    transform: rotate(125deg);
+}
